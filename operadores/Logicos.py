@@ -13,5 +13,7 @@ resultado8 = False | False
 
 """ Not como un interruptor de negación"""
 
+""" Nulo = indica la ausencia de un valor, mientras que vacio (empty) se refiere a una entidad que contiene un valor peero no tiene contenido o longitud"""
+
 
 
