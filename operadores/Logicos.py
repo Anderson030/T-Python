@@ -8,3 +8,10 @@ resultado6 = True | False
 resultado7 = False | True
 resultado8 = False | False
 
+
+
+
+""" Not como un interruptor de negación"""
+
+
+
