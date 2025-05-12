@@ -1,69 +1,31 @@
-Funciones 
--Funciones Main 
+El programa comienza con un mensaje de bienvenida al sistema
 
-Entradas = 01
-Proceso = 02 03
-Salida = 04 
+Se abre la función principal y con ella 
+la función show_menu():
 
-----------------------------------------------------
-Una función es un bloque de código que realiza una actividad, soluciona un problema, realiza un proceso. Esta se puede llamar cuantas veces quiera y sirve para reutilizar el código.
+Esta función nos va a imprimir una lista de opciones las cuales 
+van a ser validadas por una serie de if y elif 
+para poder invocar cada opción 
 
-Ejemplo
+La opción 1: 
+Nos invoca la función add_product: 
+Nos pregunta por el nuevo nombre del producto  y usa la función strip() para quitar espacios 
 
-def print_hello_world : 
-  print("Hello world")
+luego hace una validación para verificar si ese nombre que se ingreso al sistema ya existe y así arrojar un mensaje de error
 
----------------------------------------------------------
-  Una función en py siempre se define con ----DEF---
-Métodos tipo BOY SON LOS QUE NO RETORNAN NADA
+luego se usa un try para manejar excepciones de valores incorrectos
+----
+EN caso de que el nombre no exista le va a solicitar al usuario 
+precio y cantidad de productos
 
-def main(): = Es el método principal  
-    
------------------------------  
-como armar una función 
-definir que es una función con def
-ponerle nombre a al función
-parametros 
-return
-----------------------------------------
-Variables globales y locales 
-----------------------------------------
+Se maneja la excepción de Value error para verificar que el usuario ingrese valores apropiados como precio en float y cantidad en int
 
-Definir el metodo main y dentro de ese metodo va toda la lógica
--------------------------------------------------------
+luego se hace una validación para que ls precios y l cantidad sean positivos 
 
-TODO ESTO LLAMARLO A UNA FUNCION MAIN
+luego vuelve a la función principal
+donde me muestra el menú
 
-nombre= input("Enter your name: ")
-def greet(nombre):
-    print(f"Hello {nombre}")
-greet(nombre)
+si ingresamos a la opción dos 
 
 
-num1= int(input("Enter number 1: "))
-num2= int(input("Enter number 2: "))
-def sum(num1,num2):
-    return num1 + num2
-print("Result: ", sum(num1, num2))
 
-
-radio = float(input("enter radio: "))
-def a_circle(radio):
-    pi = 3.1416
-    return pi * radio **2
-print("The area of ​​the circle is: ", a_circle(radio))
-
-
-number = int(input("Enter number: "))
-def is_par(number):
-    return number % 2 == 0
-print("¿Is par?", is_par(number))
-
-
-a = int(input("Enter number 1: "))
-b = int(input("Enter number 1: "))
-c = int(input("Enter number 1: "))
-
-def count_number(a ,b, c):
-    return max(a,b,c)
-print("The oldest is: ", count_number(a,b,c))
